@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{template "include"}}
+    <title>Login</title>
+</head>
+
+<body>
+    {{ template "header" }}
+    <h1>Login</h1>
+    {{ if . }}
+    <div class="error">
+        {{ . }}
+    </div>
+    {{ end}}
+    <form action="/login" method="post">
+        Username:
+        <input type="text" name="username" id="username"> Password:
+        <input type="password" name="password" id="password">
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>

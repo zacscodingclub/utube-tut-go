@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    {{template "include"}}
+    <title>Comments</title>
+</head>
+
+<body>
+    {{template "header"}}
+    <h1>Comments</h1>
+    <form action="/" method="post">
+        <textarea name="comment" cols="30" rows="5"></textarea>
+        <div>
+            <input type="submit" value="Add Comment">
+        </div>
+    </form>
+    {{ range . }}
+    <div>{{ . }}</div>
+    {{ end }}
+</body>
+
+</html>
