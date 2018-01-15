@@ -2,20 +2,25 @@
 
 <head>
     {{template "include"}}
-    <title>Comments</title>
+    <title>{{ .Title }}</title>
 </head>
 
 <body>
     {{template "header"}}
-    <h1>Comments</h1>
+    <h1>{{ .Title }}</h1>
     <form action="/" method="post">
-        <textarea name="comment" cols="30" rows="5"></textarea>
+        <textarea name="update" cols="30" rows="5"></textarea>
         <div>
-            <input type="submit" value="Add Comment">
+            <input type="submit" value="Post Update">
         </div>
     </form>
-    {{ range . }}
-    <div>{{ . }}</div>
+    {{ range .Updates }}
+    <div>
+        <small>
+            <strong>{{ .GetUser.GetUsername }} wrote:</strong>
+        </small>
+        {{ .GetBody }}
+    </div>
     {{ end }}
 </body>
 
