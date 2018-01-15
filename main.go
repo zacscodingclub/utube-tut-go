@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/zacscodingclub/utube-tut/models"
-	"github.com/zacscodingclub/utube-tut/routes"
-	"github.com/zacscodingclub/utube-tut/utils"
+	"github.com/zacscodingclub/utube-tut-go/models"
+	"github.com/zacscodingclub/utube-tut-go/routes"
+	"github.com/zacscodingclub/utube-tut-go/utils"
 )
 
 func main() {

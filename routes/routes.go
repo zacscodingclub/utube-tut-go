@@ -5,10 +5,10 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/zacscodingclub/utube-tut/middleware"
-	"github.com/zacscodingclub/utube-tut/models"
-	"github.com/zacscodingclub/utube-tut/sessions"
-	"github.com/zacscodingclub/utube-tut/utils"
+	"github.com/zacscodingclub/utube-tut-go/middleware"
+	"github.com/zacscodingclub/utube-tut-go/models"
+	"github.com/zacscodingclub/utube-tut-go/sessions"
+	"github.com/zacscodingclub/utube-tut-go/utils"
 )
 
 func NewRouter() *mux.Router {

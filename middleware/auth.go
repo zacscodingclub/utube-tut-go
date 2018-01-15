@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/zacscodingclub/utube-tut/sessions"
+	"github.com/zacscodingclub/utube-tut-go/sessions"
 )
 
 func AuthRequired(h http.HandlerFunc) http.HandlerFunc {
